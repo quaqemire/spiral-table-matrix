@@ -1,15 +1,15 @@
 function matrix(w, h) {
     const arr = []
 
-    for (let i = 0; i <= h; i++) {
+    for (let i = 0; i < h; i++) {
         arr[i] = []
     }
 
-    let num = 0
+    let num = 1
 
     let top = 0 // двигается вниз
-    let right = w // влево
-    let bottom = h // двигается вверх
+    let right = w - 1 // влево
+    let bottom = h - 1 // двигается вверх
     let left = 0 // вправо
 
     // формулировка: пока не сожмется полностью, то
